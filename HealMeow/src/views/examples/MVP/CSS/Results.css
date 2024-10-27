@@ -12,14 +12,15 @@
     /* Change placeholder color to black */
 }
 
-/* Prevent overflow issues */
-html,
-body {
-    overflow-x: hidden;
-    /* Hide horizontal scroll on phones */
-}
+@media screen and (max-width:500px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Hide horizontal scroll on phones */
+    }
 
-.section-signup {
-    overflow: hidden;
-    /* Ensure content fits in the section */
+    .section-signup {
+        overflow: hidden;
+        /* Ensure content fits in the section */
+    }
 }

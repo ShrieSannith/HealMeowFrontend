@@ -2,42 +2,52 @@
 .sticky-image-container {
     position: sticky;
     top: 50px;
+    /* Stick to the top after scrolling */
+    overflow: visible;
+    /* Allow overflow */
 }
 
 .fade-img {
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    /* Smooth transition for fading */
     position: absolute;
+    /* Absolute positioning for fading effect */
 }
 
 .fade-img.visible {
     opacity: 1;
+    /* Make the image visible */
 }
 
 .fade-img.hidden {
     opacity: 0;
+    /* Hide the image */
 }
 
 .text-section {
     margin-bottom: 100px;
-    /* Add spacing between sections */
+    /* Space between sections */
 }
 
 /* Mobile-specific styles */
 @media (max-width: 767px) {
     .sticky-image-container {
         position: relative;
-        /* No sticky positioning */
+        /* Use relative positioning on mobile */
     }
 
     .fade-img {
         position: relative;
+        /* Change to relative for stacking */
         opacity: 1;
+        /* Always visible on mobile */
         transition: none;
-        /* Disable fading and make images always visible */
+        /* Disable transition on mobile */
         width: 100%;
-        /* Ensure images fit within the screen width */
+        /* Fit images within screen width */
         margin-top: 20px;
+        /* Spacing above images */
     }
 
     .fade-img.hidden {
@@ -47,6 +57,7 @@
 
     .fade-img.visible {
         opacity: 1;
+        /* Always visible */
     }
 
     .text-section {
@@ -57,6 +68,7 @@
     /* Ensure proper vertical flow */
     .section-nucleo-icons .row {
         flex-direction: column;
+        /* Stack columns vertically on mobile */
     }
 
     .text-section,
@@ -66,6 +78,7 @@
     }
 }
 
+/* Bullet Points Styles */
 .bullet-points {
     list-style-type: disc;
     /* Bullet style */
@@ -78,4 +91,7 @@
 .bullet-points li {
     margin-bottom: 5px;
     /* Space between bullet points */
+}
+.allow-overflow {
+    overflow: visible; /* Allow overflow for this section */
 }

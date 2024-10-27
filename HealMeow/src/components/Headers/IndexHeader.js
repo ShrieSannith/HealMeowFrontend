@@ -1,6 +1,5 @@
-/*eslint-disable*/
 import React, { useState } from "react";
-import { HashRouter as Router, useNavigate } from "react-router-dom";
+import { HashRouter as Router, useNavigate, Link } from "react-router-dom"; // Import Link for navigation
 import {
   Form,
   FormGroup,
@@ -77,9 +76,11 @@ function IndexHeader() {
         >
           <h1 className="healmeow" style={{ color: "white" }}>HealMeow</h1>
           <h3>Discover Your Perfect Medical Journey with Our Expert AI Assistant</h3>
-          <Button style={{ backgroundColor: '#0066b2', marginBottom: '20px' }} type="submit">
-            Signup to book your plan now
-          </Button>
+          <Link to="/signup-page" style={{ textDecoration: 'none' }}>
+            <Button style={{ backgroundColor: '#0066b2', marginBottom: '20px' }}>
+              Signup to book your plan now
+            </Button>
+          </Link>
           
           <br/>
           <Form onSubmit={handleSubmit} style={{ width: '100%', maxWidth: '800px' }}>

@@ -41,9 +41,9 @@ function NucleoIcons() {
           Our dedicated team is committed to providing accurate information to help you make significant healthcare decisions. We encourage you to use our Cost Comparison AI to find the best medical care options, ensuring high-quality treatment at competitive prices.
         </h5>
 
-          <Button color="primary">
+          {/* <Button color="primary">
   <Link to="/cost" style={{ color: 'white', textDecoration: 'none' }}>Get Cost Comparison</Link>
-</Button>
+</Button> */}
 
           </div>
 
@@ -58,9 +58,9 @@ function NucleoIcons() {
           <br /><br/>
             Empower your adventures with our Travel Assistance AI and make informed decisions effortlessly. Travel smarter, explore more, and create unforgettable memories with the help of our advanced technology.
           </h5>
-                    <Button color="primary">
+                    {/* <Button color="primary">
   <Link to="/travel" style={{ color: 'white', textDecoration: 'none' }}>Get travel Assistance</Link>
-</Button>
+</Button> */}
         </div>
 
             {/* <div className="text-section" id="section3">
